@@ -358,6 +358,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define HOMING_FEEDRATE {50*60, 50*60, 4*60, 0}  // set the homing speeds (mm/min)
 
 // default settings
+//#define DEFAULT_AXIS_STEPS_PER_UNIT {106.76, 106.76, 800, 67.16}
+//#define DEFAULT_AXIS_STEPS_PER_UNIT {42.44132, 42.44132, 800.00, 102.0}
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {84.88264,84.88264,800.00,60.0}  // default steps per unit for SUMPOD
 // #define DEFAULT_AXIS_STEPS_PER_UNIT   {78.7402,78.7402,200.0*8/3,760*1.1}  // default steps per unit for Ultimaker
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 25}    // (mm/sec)
