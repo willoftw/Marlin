@@ -345,9 +345,9 @@ const unsigned int dropsegments=5; //everything with less than this number of st
 // be commented out otherwise
 #define SDCARDDETECTINVERTED 
 
-#ifdef ULTIPANEL
- #undef SDCARDDETECTINVERTED
-#endif
+// #ifdef ULTIPANEL
+//  #undef SDCARDDETECTINVERTED
+// #endif
 
 // Power Signal Control Definitions
 // By default use ATX definition
