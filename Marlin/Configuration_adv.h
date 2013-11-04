@@ -235,9 +235,8 @@
 #define DEFAULT_MINTRAVELFEEDRATE     0.0
 
 // Feedrates for manual moves along X, Y, Z, E from panel
-#ifdef ULTIPANEL
 #define MANUAL_FEEDRATE {50*60, 50*60, 4*60, 60}  // set the speeds for manual moves (mm/min)
-#endif
+
 
 // minimum time in microseconds that a movement needs to take if the buffer is emptied.
 #define DEFAULT_MINSEGMENTTIME        20000
@@ -345,9 +344,9 @@ const unsigned int dropsegments=5; //everything with less than this number of st
 // be commented out otherwise
 #define SDCARDDETECTINVERTED 
 
-// #ifdef ULTIPANEL
-//  #undef SDCARDDETECTINVERTED
-// #endif
+#ifdef ULTIPANEL
+ #undef SDCARDDETECTINVERTED
+#endif
 
 // Power Signal Control Definitions
 // By default use ATX definition
